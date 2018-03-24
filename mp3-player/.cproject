@@ -19,11 +19,11 @@
 							<builder buildPath="${workspace_loc:/i2s_test}/Release" id="io.sloeber.sketch.builder.1956242328" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Arduino sketch builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="io.sloeber.sketch.builder"/>
 							<tool id="io.sloeber.tool.sketch.compiler.cpp.220701272" name="Arduino C++ Compiler" superClass="io.sloeber.tool.sketch.compiler.cpp">
 								<option id="io.sloeber.compiler.cpp.sketch.option.incpath.1005448479" name="Include Paths (-I)" superClass="io.sloeber.compiler.cpp.sketch.option.incpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/core/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/core/variant}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/libraries/SdFat}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/libraries/SdFat/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/libraries/SDIO}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/core/core}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/core/variant}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/libraries/SPI}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/libraries/SPI/src}&quot;"/>
 								</option>
@@ -31,11 +31,11 @@
 							</tool>
 							<tool id="io.sloeber.tool.compiler.c.389794456" name="Arduino C Compiler" superClass="io.sloeber.tool.compiler.c">
 								<option id="io.sloeber.compiler.c.sketch.option.incpath.1917670063" name="Include Paths (-I)" superClass="io.sloeber.compiler.c.sketch.option.incpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/core/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/core/variant}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/libraries/SdFat}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/libraries/SdFat/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/libraries/SDIO}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/core/core}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/core/variant}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/libraries/SPI}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/libraries/SPI/src}&quot;"/>
 								</option>
@@ -43,11 +43,11 @@
 							</tool>
 							<tool id="io.sloeber.tool.sketch.compiler.s.1668714407" name="Arduino Assembler" superClass="io.sloeber.tool.sketch.compiler.s">
 								<option id="io.sloeber.compiler.asm.sketch.option.incpath.2135240037" name="Include Paths (-I)" superClass="io.sloeber.compiler.asm.sketch.option.incpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/core/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/core/variant}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/libraries/SdFat}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/libraries/SdFat/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/libraries/SDIO}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/core/core}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/core/variant}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/libraries/SPI}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mp3-player/libraries/SPI/src}&quot;"/>
 								</option>

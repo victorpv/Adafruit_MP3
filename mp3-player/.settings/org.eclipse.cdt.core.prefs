@@ -28,7 +28,7 @@ environment/project/io.sloeber.core.toolChain.release.2001033540/A.BUILD.CORE/op
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.BUILD.CORE/value=${A.JANTJE.BUILD_CORE}
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.BUILD.CPU_FLAGS/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.BUILD.CPU_FLAGS/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.BUILD.CPU_FLAGS/value=-DMCU_STM32F103RC
+environment/project/io.sloeber.core.toolChain.release.2001033540/A.BUILD.CPU_FLAGS/value=-DMCU_STM32F103RE
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.BUILD.ERROR_LED_PIN/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.BUILD.ERROR_LED_PIN/operation=replace
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.BUILD.ERROR_LED_PIN/value=1
@@ -40,7 +40,7 @@ environment/project/io.sloeber.core.toolChain.release.2001033540/A.BUILD.EXTRA_F
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.BUILD.EXTRA_FLAGS/value=\ ${A.BUILD.UPLOAD_FLAGS} ${A.BUILD.CPU_FLAGS} ${A.BUILD.HS_FLAG} ${A.BUILD.COMMON_FLAGS}
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.BUILD.FLAGS.LDSPECS/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.BUILD.FLAGS.LDSPECS/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.BUILD.FLAGS.LDSPECS/value=--specs\=nano.specs
+environment/project/io.sloeber.core.toolChain.release.2001033540/A.BUILD.FLAGS.LDSPECS/value=
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.BUILD.FLAGS.OPTIMIZE/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.BUILD.FLAGS.OPTIMIZE/operation=replace
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.BUILD.FLAGS.OPTIMIZE/value=-O2
@@ -178,10 +178,10 @@ environment/project/io.sloeber.core.toolChain.release.2001033540/A.EXTRA.TIME.DT
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.EXTRA.TIME.DTS/value=3600
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.EXTRA.TIME.LOCAL/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.EXTRA.TIME.LOCAL/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.EXTRA.TIME.LOCAL/value=1521760249
+environment/project/io.sloeber.core.toolChain.release.2001033540/A.EXTRA.TIME.LOCAL/value=1521891001
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.EXTRA.TIME.UTC/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.EXTRA.TIME.UTC/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.EXTRA.TIME.UTC/value=1521778249
+environment/project/io.sloeber.core.toolChain.release.2001033540/A.EXTRA.TIME.UTC/value=1521909001
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.EXTRA.TIME.ZONE/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.EXTRA.TIME.ZONE/operation=replace
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.EXTRA.TIME.ZONE/value=-21600
@@ -229,19 +229,19 @@ environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.AR.PAT
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.AR.PATTERN/value="${A.COMPILER.PATH}${A.COMPILER.AR.CMD}" ${A.COMPILER.AR.FLAGS} ${A.COMPILER.AR.EXTRA_FLAGS} "${A.ARCHIVE_FILE_PATH}" "${A.OBJECT_FILE}"
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.COMBINE.PATTERN.1/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.COMBINE.PATTERN.1/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.COMBINE.PATTERN.1/value="D\:\\linked_to_c\\sloeber\\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -O2 -Wl,--gc-sections -mcpu\=cortex-m3 "-TC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/variants/generic_stm32f103r/ld/bootloader.ld" "-Wl,-Map,C\:\\Users\\Victor\\Documents\\sloeber-workspace\\mp3-player/Release/mp3-player.map" "-LC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/variants/generic_stm32f103r/ld" -o "C\:\\Users\\Victor\\Documents\\sloeber-workspace\\mp3-player/Release/mp3-player.elf" "-LC\:\\Users\\Victor\\Documents\\sloeber-workspace\\mp3-player/Release" -lm -lgcc -mthumb -Wl,--cref -Wl,--check-sections -Wl,--gc-sections -Wl,--unresolved-symbols\=report-all -Wl,--warn-common -Wl,--warn-section-align -Wl,--warn-unresolved-symbols -Wl,--start-group 
+environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.COMBINE.PATTERN.1/value="D\:\\linked_to_c\\sloeber\\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -O2 -Wl,--gc-sections -mcpu\=cortex-m3 "-TC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/variants/generic_stm32f103r/ld/bootloader.ld" "-Wl,-Map,C\:\\Users\\Victor\\git\\mp3-player-F1\\mp3-player/Release/mp3-player.map" "-LC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/variants/generic_stm32f103r/ld" -o "C\:\\Users\\Victor\\git\\mp3-player-F1\\mp3-player/Release/mp3-player.elf" "-LC\:\\Users\\Victor\\git\\mp3-player-F1\\mp3-player/Release" -lm -lgcc -mthumb -Wl,--cref -Wl,--check-sections -Wl,--gc-sections -Wl,--unresolved-symbols\=report-all -Wl,--warn-common -Wl,--warn-section-align -Wl,--warn-unresolved-symbols -Wl,--start-group 
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.COMBINE.PATTERN.2/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.COMBINE.PATTERN.2/operation=replace
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.COMBINE.PATTERN.2/value=\ 
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.COMBINE.PATTERN.3/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.COMBINE.PATTERN.3/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.COMBINE.PATTERN.3/value=-Wl,--end-group  --specs\=nano.specs
+environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.COMBINE.PATTERN.3/value=\ -Wl,--end-group
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.COMBINE.PATTERN/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.COMBINE.PATTERN/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.COMBINE.PATTERN/value="${A.COMPILER.PATH}${A.COMPILER.C.ELF.CMD}" ${A.COMPILER.C.ELF.FLAGS} -mcpu\=${A.BUILD.MCU} "-T${A.BUILD.VARIANT.PATH}/${A.BUILD.LDSCRIPT}" "-Wl,-Map,${A.BUILD.PATH}/${A.BUILD.PROJECT_NAME}.map" ${A.COMPILER.C.ELF.EXTRA_FLAGS} -o "${A.BUILD.PATH}/${A.BUILD.PROJECT_NAME}.elf" "-L${A.BUILD.PATH}" -lm -lgcc -mthumb -Wl,--cref -Wl,--check-sections -Wl,--gc-sections -Wl,--unresolved-symbols\=report-all -Wl,--warn-common -Wl,--warn-section-align -Wl,--warn-unresolved-symbols -Wl,--start-group ${A.OBJECT_FILES} "${A.BUILD.PATH}/${A.ARCHIVE_FILE}" -Wl,--end-group  --specs\=nano.specs
+environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.COMBINE.PATTERN/value="${A.COMPILER.PATH}${A.COMPILER.C.ELF.CMD}" ${A.COMPILER.C.ELF.FLAGS} -mcpu\=${A.BUILD.MCU} "-T${A.BUILD.VARIANT.PATH}/${A.BUILD.LDSCRIPT}" "-Wl,-Map,${A.BUILD.PATH}/${A.BUILD.PROJECT_NAME}.map" ${A.COMPILER.C.ELF.EXTRA_FLAGS} -o "${A.BUILD.PATH}/${A.BUILD.PROJECT_NAME}.elf" "-L${A.BUILD.PATH}" -lm -lgcc -mthumb -Wl,--cref -Wl,--check-sections -Wl,--gc-sections -Wl,--unresolved-symbols\=report-all -Wl,--warn-common -Wl,--warn-section-align -Wl,--warn-unresolved-symbols -Wl,--start-group ${A.OBJECT_FILES} "${A.BUILD.PATH}/${A.ARCHIVE_FILE}" -Wl,--end-group
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.O.PATTERN.1/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.O.PATTERN.1/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.O.PATTERN.1/value="D\:\\linked_to_c\\sloeber\\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-gcc" -c -g -O2 -Wall -Wextra -DDEBUG_LEVEL\=DEBUG_ALL -std\=gnu11 -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single\=500 -DBOARD_generic_stm32f103r -DVECT_TAB_ADDR\=0x8002000 -DERROR_LED_PORT\=GPIOB -DERROR_LED_PIN\=1 -mcpu\=cortex-m3 -DF_CPU\=72000000L -DARDUINO\=10609 -DARDUINO_GENERIC_STM32F103R -DARDUINO_ARCH_STM32F1  -DSERIAL_USB -DGENERIC_BOOTLOADER -DMCU_STM32F103RC -DHSE_16M -mthumb -march\=armv7-m -D__STM32F1__ "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple" "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/include" "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/stm32f1/include"                              "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/usb/stm32f1" "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/usb/usb_lib"  
+environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.O.PATTERN.1/value="D\:\\linked_to_c\\sloeber\\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-gcc" -c -g -O2 -Wall -Wextra -DDEBUG_LEVEL\=DEBUG_ALL -std\=gnu11 -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single\=500 -DBOARD_generic_stm32f103r -DVECT_TAB_ADDR\=0x8002000 -DERROR_LED_PORT\=GPIOB -DERROR_LED_PIN\=1 -mcpu\=cortex-m3 -DF_CPU\=72000000L -DARDUINO\=10609 -DARDUINO_GENERIC_STM32F103R -DARDUINO_ARCH_STM32F1  -DSERIAL_USB -DGENERIC_BOOTLOADER -DMCU_STM32F103RE -DHSE_16M -mthumb -march\=armv7-m -D__STM32F1__ "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple" "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/include" "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/stm32f1/include"                              "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/usb/stm32f1" "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/usb/usb_lib"  
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.O.PATTERN.2/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.O.PATTERN.2/operation=replace
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.O.PATTERN.2/value=\ -o 
@@ -250,10 +250,10 @@ environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.O.PA
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.O.PATTERN.3/value=
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.O.PATTERN/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.O.PATTERN/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.O.PATTERN/value="${A.COMPILER.PATH}${A.COMPILER.C.CMD}" ${A.COMPILER.C.FLAGS} -mcpu\=${A.BUILD.MCU} -DF_CPU\=${A.BUILD.F_CPU} -DARDUINO\=${A.RUNTIME.IDE.VERSION} -DARDUINO_${A.BUILD.BOARD} -DARDUINO_ARCH_${A.BUILD.ARCH} ${A.COMPILER.C.EXTRA_FLAGS} ${A.BUILD.EXTRA_FLAGS} ${A.COMPILER.LIBS.C.FLAGS} ${A.INCLUDES} "${A.SOURCE_FILE}" -o "${A.OBJECT_FILE}"  --specs\=nano.specs
+environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.C.O.PATTERN/value="${A.COMPILER.PATH}${A.COMPILER.C.CMD}" ${A.COMPILER.C.FLAGS} -mcpu\=${A.BUILD.MCU} -DF_CPU\=${A.BUILD.F_CPU} -DARDUINO\=${A.RUNTIME.IDE.VERSION} -DARDUINO_${A.BUILD.BOARD} -DARDUINO_ARCH_${A.BUILD.ARCH} ${A.COMPILER.C.EXTRA_FLAGS} ${A.BUILD.EXTRA_FLAGS} ${A.COMPILER.LIBS.C.FLAGS} ${A.INCLUDES} "${A.SOURCE_FILE}" -o "${A.OBJECT_FILE}"
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.CPP.O.PATTERN.1/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.CPP.O.PATTERN.1/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.CPP.O.PATTERN.1/value="D\:\\linked_to_c\\sloeber\\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -c -g -O2 -Wall -Wextra -DDEBUG_LEVEL\=DEBUG_ALL -std\=gnu++11 -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single\=500 -fno-rtti -fno-exceptions -DBOARD_generic_stm32f103r -DVECT_TAB_ADDR\=0x8002000 -DERROR_LED_PORT\=GPIOB -DERROR_LED_PIN\=1 -mcpu\=cortex-m3 -DF_CPU\=72000000L -DARDUINO\=10609 -DARDUINO_GENERIC_STM32F103R -DARDUINO_ARCH_STM32F1  -DSERIAL_USB -DGENERIC_BOOTLOADER -DMCU_STM32F103RC -DHSE_16M -mthumb -march\=armv7-m -D__STM32F1__ -DMCU_STM32F103RC -DHSE_16M -mthumb -march\=armv7-m -D__STM32F1__ "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple" "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/include" "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/stm32f1/include"                              "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/usb/stm32f1" "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/usb/usb_lib"  
+environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.CPP.O.PATTERN.1/value="D\:\\linked_to_c\\sloeber\\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -c -g -O2 -Wall -Wextra -DDEBUG_LEVEL\=DEBUG_ALL -std\=gnu++11 -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single\=500 -fno-rtti -fno-exceptions -DBOARD_generic_stm32f103r -DVECT_TAB_ADDR\=0x8002000 -DERROR_LED_PORT\=GPIOB -DERROR_LED_PIN\=1 -mcpu\=cortex-m3 -DF_CPU\=72000000L -DARDUINO\=10609 -DARDUINO_GENERIC_STM32F103R -DARDUINO_ARCH_STM32F1  -DSERIAL_USB -DGENERIC_BOOTLOADER -DMCU_STM32F103RE -DHSE_16M -mthumb -march\=armv7-m -D__STM32F1__ -DMCU_STM32F103RE -DHSE_16M -mthumb -march\=armv7-m -D__STM32F1__ "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple" "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/include" "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/stm32f1/include"                              "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/usb/stm32f1" "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/usb/usb_lib"  
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.CPP.O.PATTERN.2/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.CPP.O.PATTERN.2/operation=replace
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.CPP.O.PATTERN.2/value=\ -o 
@@ -262,7 +262,7 @@ environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.CPP.O.
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.CPP.O.PATTERN.3/value=
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.CPP.O.PATTERN/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.CPP.O.PATTERN/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.CPP.O.PATTERN/value="${A.COMPILER.PATH}${A.COMPILER.CPP.CMD}" ${A.COMPILER.CPP.FLAGS} -mcpu\=${A.BUILD.MCU} -DF_CPU\=${A.BUILD.F_CPU} -DARDUINO\=${A.RUNTIME.IDE.VERSION} -DARDUINO_${A.BUILD.BOARD} -DARDUINO_ARCH_${A.BUILD.ARCH} ${A.COMPILER.CPP.EXTRA_FLAGS} ${A.BUILD.EXTRA_FLAGS} ${A.BUILD.CPU_FLAGS} ${A.BUILD.HS_FLAG} ${A.BUILD.COMMON_FLAGS} ${A.COMPILER.LIBS.C.FLAGS} ${A.INCLUDES} "${A.SOURCE_FILE}" -o "${A.OBJECT_FILE}"   --specs\=nano.specs
+environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.CPP.O.PATTERN/value="${A.COMPILER.PATH}${A.COMPILER.CPP.CMD}" ${A.COMPILER.CPP.FLAGS} -mcpu\=${A.BUILD.MCU} -DF_CPU\=${A.BUILD.F_CPU} -DARDUINO\=${A.RUNTIME.IDE.VERSION} -DARDUINO_${A.BUILD.BOARD} -DARDUINO_ARCH_${A.BUILD.ARCH} ${A.COMPILER.CPP.EXTRA_FLAGS} ${A.BUILD.EXTRA_FLAGS} ${A.BUILD.CPU_FLAGS} ${A.BUILD.HS_FLAG} ${A.BUILD.COMMON_FLAGS} ${A.COMPILER.LIBS.C.FLAGS} ${A.INCLUDES} "${A.SOURCE_FILE}" -o "${A.OBJECT_FILE}"
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.OBJCOPY.EEP.PATTERN.1/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.OBJCOPY.EEP.PATTERN.1/operation=replace
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.OBJCOPY.EEP.PATTERN.1/value=
@@ -271,7 +271,7 @@ environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.OBJCOP
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.OBJCOPY.EEP.PATTERN/value=
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.OBJCOPY.HEX.PATTERN.1/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.OBJCOPY.HEX.PATTERN.1/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.OBJCOPY.HEX.PATTERN.1/value="D\:\\linked_to_c\\sloeber\\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-objcopy" -O binary "C\:\\Users\\Victor\\Documents\\sloeber-workspace\\mp3-player/Release/mp3-player.elf" "C\:\\Users\\Victor\\Documents\\sloeber-workspace\\mp3-player/Release/mp3-player.bin"
+environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.OBJCOPY.HEX.PATTERN.1/value="D\:\\linked_to_c\\sloeber\\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-objcopy" -O binary "C\:\\Users\\Victor\\git\\mp3-player-F1\\mp3-player/Release/mp3-player.elf" "C\:\\Users\\Victor\\git\\mp3-player-F1\\mp3-player/Release/mp3-player.bin"
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.OBJCOPY.HEX.PATTERN/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.OBJCOPY.HEX.PATTERN/operation=replace
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.OBJCOPY.HEX.PATTERN/value="${A.COMPILER.PATH}${A.COMPILER.ELF2HEX.CMD}" ${A.COMPILER.ELF2HEX.FLAGS} ${A.COMPILER.ELF2HEX.EXTRA_FLAGS} "${A.BUILD.PATH}/${A.BUILD.PROJECT_NAME}.elf" "${A.BUILD.PATH}/${A.BUILD.PROJECT_NAME}.bin"
@@ -283,7 +283,7 @@ environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.OUTPUT
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.OUTPUT.TMP_FILE/value=${A.BUILD.PROJECT_NAME}.bin
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.S.O.PATTERN.1/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.S.O.PATTERN.1/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.S.O.PATTERN.1/value="D\:\\linked_to_c\\sloeber\\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-gcc" -c -g -x assembler-with-cpp -mcpu\=cortex-m3 -DF_CPU\=72000000L -DARDUINO\=10609 -DARDUINO_GENERIC_STM32F103R -DARDUINO_ARCH_STM32F1  -DSERIAL_USB -DGENERIC_BOOTLOADER -DMCU_STM32F103RC -DHSE_16M -mthumb -march\=armv7-m -D__STM32F1__ -DMCU_STM32F103RC -DHSE_16M -mthumb -march\=armv7-m -D__STM32F1__ "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple" "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/include" "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/stm32f1/include"                              "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/usb/stm32f1" "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/usb/usb_lib"  
+environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.S.O.PATTERN.1/value="D\:\\linked_to_c\\sloeber\\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-gcc" -c -g -x assembler-with-cpp -mcpu\=cortex-m3 -DF_CPU\=72000000L -DARDUINO\=10609 -DARDUINO_GENERIC_STM32F103R -DARDUINO_ARCH_STM32F1  -DSERIAL_USB -DGENERIC_BOOTLOADER -DMCU_STM32F103RE -DHSE_16M -mthumb -march\=armv7-m -D__STM32F1__ -DMCU_STM32F103RE -DHSE_16M -mthumb -march\=armv7-m -D__STM32F1__ "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple" "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/include" "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/stm32f1/include"                              "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/usb/stm32f1" "-IC\:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/system/libmaple/usb/usb_lib"  
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.S.O.PATTERN.2/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.S.O.PATTERN.2/operation=replace
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.S.O.PATTERN.2/value=\ -o 
@@ -295,7 +295,7 @@ environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.S.O.PA
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.S.O.PATTERN/value="${A.COMPILER.PATH}${A.COMPILER.C.CMD}" ${A.COMPILER.S.FLAGS} -mcpu\=${A.BUILD.MCU} -DF_CPU\=${A.BUILD.F_CPU} -DARDUINO\=${A.RUNTIME.IDE.VERSION} -DARDUINO_${A.BUILD.BOARD} -DARDUINO_ARCH_${A.BUILD.ARCH} ${A.COMPILER.S.EXTRA_FLAGS} ${A.BUILD.EXTRA_FLAGS} ${A.BUILD.CPU_FLAGS} ${A.BUILD.HS_FLAG} ${A.BUILD.COMMON_FLAGS} ${A.COMPILER.LIBS.C.FLAGS} ${A.INCLUDES} "${A.SOURCE_FILE}" -o "${A.OBJECT_FILE}"
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.SIZE.PATTERN.1/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.SIZE.PATTERN.1/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.SIZE.PATTERN.1/value="D\:\\linked_to_c\\sloeber\\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-size" -A "C\:\\Users\\Victor\\Documents\\sloeber-workspace\\mp3-player/Release/mp3-player.elf"
+environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.SIZE.PATTERN.1/value="D\:\\linked_to_c\\sloeber\\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-size" -A "C\:\\Users\\Victor\\git\\mp3-player-F1\\mp3-player/Release/mp3-player.elf"
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.SIZE.PATTERN/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.SIZE.PATTERN/operation=replace
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.RECIPE.SIZE.PATTERN/value="${A.COMPILER.PATH}${A.COMPILER.SIZE.CMD}" -A "${A.BUILD.PATH}/${A.BUILD.PROJECT_NAME}.elf"
@@ -536,21 +536,15 @@ environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.AUTO_R
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.FILE_TYPE/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.FILE_TYPE/operation=replace
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.FILE_TYPE/value=bin
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.FLASH.MAXIMUM_SIZE/delimiter=;
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.FLASH.MAXIMUM_SIZE/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.FLASH.MAXIMUM_SIZE/value=262144
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.MAXIMUM_DATA_SIZE/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.MAXIMUM_DATA_SIZE/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.MAXIMUM_DATA_SIZE/value=49152
+environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.MAXIMUM_DATA_SIZE/value=65536
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.MAXIMUM_SIZE/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.MAXIMUM_SIZE/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.MAXIMUM_SIZE/value=262144
+environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.MAXIMUM_SIZE/value=524288
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.PROTOCOL/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.PROTOCOL/operation=replace
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.PROTOCOL/value=maple_dfu
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.RAM.MAXIMUM_SIZE/delimiter=;
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.RAM.MAXIMUM_SIZE/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.RAM.MAXIMUM_SIZE/value=49152
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.TOOL/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.TOOL/operation=replace
 environment/project/io.sloeber.core.toolChain.release.2001033540/A.UPLOAD.TOOL/value=maple_upload
@@ -598,13 +592,16 @@ environment/project/io.sloeber.core.toolChain.release.2001033540/JANTJE.MENU.CPU
 environment/project/io.sloeber.core.toolChain.release.2001033540/JANTJE.MENU.CPU_SPEED/value=SPEED_16M_CRYSTAL
 environment/project/io.sloeber.core.toolChain.release.2001033540/JANTJE.MENU.DEVICE_VARIANT/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/JANTJE.MENU.DEVICE_VARIANT/operation=replace
-environment/project/io.sloeber.core.toolChain.release.2001033540/JANTJE.MENU.DEVICE_VARIANT/value=STM32F103RC
+environment/project/io.sloeber.core.toolChain.release.2001033540/JANTJE.MENU.DEVICE_VARIANT/value=STM32F103RE
 environment/project/io.sloeber.core.toolChain.release.2001033540/JANTJE.MENU.OPT/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/JANTJE.MENU.OPT/operation=replace
 environment/project/io.sloeber.core.toolChain.release.2001033540/JANTJE.MENU.OPT/value=O2STD
 environment/project/io.sloeber.core.toolChain.release.2001033540/JANTJE.MENU.UPLOAD_METHOD/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/JANTJE.MENU.UPLOAD_METHOD/operation=replace
 environment/project/io.sloeber.core.toolChain.release.2001033540/JANTJE.MENU.UPLOAD_METHOD/value=DFUUPLOADMETHOD
+environment/project/io.sloeber.core.toolChain.release.2001033540/JANTJE.MENU.USB_CFG/delimiter=;
+environment/project/io.sloeber.core.toolChain.release.2001033540/JANTJE.MENU.USB_CFG/operation=replace
+environment/project/io.sloeber.core.toolChain.release.2001033540/JANTJE.MENU.USB_CFG/value=USB_SERIAL
 environment/project/io.sloeber.core.toolChain.release.2001033540/JANTJE.OBJCOPY/delimiter=;
 environment/project/io.sloeber.core.toolChain.release.2001033540/JANTJE.OBJCOPY/operation=replace
 environment/project/io.sloeber.core.toolChain.release.2001033540/JANTJE.OBJCOPY/value=${A.RECIPE.OBJCOPY.HEX.PATTERN}

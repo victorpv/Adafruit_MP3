@@ -64,7 +64,7 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 AR += \
-C:/Users/Victor/Documents/sloeber-workspace/mp3-player/Release/arduino.ar \
+C:/Users/Victor/git/mp3-player-F1/mp3-player/Release/arduino.ar \
 
 ELF += \
 mp3-player.elf \
@@ -80,25 +80,25 @@ all: mp3-player
 mp3-player: $(HEX)
 	@echo 'Building target: $@'
 	@echo 'Printing size:'
-	"D:\linked_to_c\sloeber\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-size" -A "C:/Users/Victor/Documents/sloeber-workspace/mp3-player/Release/mp3-player.elf"
+	"D:\linked_to_c\sloeber\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-size" -A "C:/Users/Victor/git/mp3-player-F1/mp3-player/Release/mp3-player.elf"
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-C:/Users/Victor/Documents/sloeber-workspace/mp3-player/Release/arduino.ar: $(AR_OBJ)
+C:/Users/Victor/git/mp3-player-F1/mp3-player/Release/arduino.ar: $(AR_OBJ)
 	@echo 'Starting archiver'
-	"D:\linked_to_c\sloeber\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-ar" rcs    C:/Users/Victor/Documents/sloeber-workspace/mp3-player/Release/arduino.ar $(AR_OBJ)
+	"D:\linked_to_c\sloeber\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-ar" rcs    C:/Users/Victor/git/mp3-player-F1/mp3-player/Release/arduino.ar $(AR_OBJ)
 	@echo 'Finished building: $@'
 	@echo ' '
 
 mp3-player.elf: $(LINK_OBJ) $(AR)
 	@echo 'Starting combiner'
-	"D:\linked_to_c\sloeber\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -O2 -Wl,--gc-sections -mcpu=cortex-m3 "-TC:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/variants/generic_stm32f103r/ld/bootloader.ld" "-Wl,-Map,C:\Users\Victor\Documents\sloeber-workspace\mp3-player/Release/mp3-player.map" "-LC:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/variants/generic_stm32f103r/ld" -o "C:\Users\Victor\Documents\sloeber-workspace\mp3-player/Release/mp3-player.elf" "-LC:\Users\Victor\Documents\sloeber-workspace\mp3-player/Release" -lm -lgcc -mthumb -Wl,--cref -Wl,--check-sections -Wl,--gc-sections -Wl,--unresolved-symbols=report-all -Wl,--warn-common -Wl,--warn-section-align -Wl,--warn-unresolved-symbols -Wl,--start-group   $(LINK_OBJ) $(AR)   C:/Users/Victor/Documents/sloeber-workspace/mp3-player/Release/arduino.ar -Wl,--end-group  --specs=nano.specs
+	"D:\linked_to_c\sloeber\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -O2 -Wl,--gc-sections -mcpu=cortex-m3 "-TC:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/variants/generic_stm32f103r/ld/bootloader.ld" "-Wl,-Map,C:\Users\Victor\git\mp3-player-F1\mp3-player/Release/mp3-player.map" "-LC:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/variants/generic_stm32f103r/ld" -o "C:\Users\Victor\git\mp3-player-F1\mp3-player/Release/mp3-player.elf" "-LC:\Users\Victor\git\mp3-player-F1\mp3-player/Release" -lm -lgcc -mthumb -Wl,--cref -Wl,--check-sections -Wl,--gc-sections -Wl,--unresolved-symbols=report-all -Wl,--warn-common -Wl,--warn-section-align -Wl,--warn-unresolved-symbols -Wl,--start-group   $(LINK_OBJ) $(AR)   C:/Users/Victor/git/mp3-player-F1/mp3-player/Release/arduino.ar  -Wl,--end-group
 	@echo 'Finished building: $@'
 	@echo ' '
 
 mp3-player.hex: $(ELF)
 	@echo 'Create eeprom image'
-	"D:\linked_to_c\sloeber\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-objcopy" -O binary  "C:/Users/Victor/Documents/sloeber-workspace/mp3-player/Release/mp3-player.elf" "C:/Users/Victor/Documents/sloeber-workspace/mp3-player/Release/mp3-player.bin"
+	"D:\linked_to_c\sloeber\/arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-objcopy" -O binary  "C:/Users/Victor/git/mp3-player-F1/mp3-player/Release/mp3-player.elf" "C:/Users/Victor/git/mp3-player-F1/mp3-player/Release/mp3-player.bin"
 	@echo 'Finished building: $@'
 	@echo ' '
 

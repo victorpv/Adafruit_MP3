@@ -30,4 +30,31 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 		<nature>io.sloeber.arduinonature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>core/core</name>
+			<type>2</type>
+			<location>C:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/cores/maple</location>
+		</link>
+		<link>
+			<name>core/variant</name>
+			<type>2</type>
+			<location>C:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/variants/generic_stm32f103r</location>
+		</link>
+		<link>
+			<name>libraries/SDIO</name>
+			<type>2</type>
+			<location>C:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/libraries/SDIO</location>
+		</link>
+		<link>
+			<name>libraries/SPI</name>
+			<type>2</type>
+			<location>C:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/libraries/SPI</location>
+		</link>
+		<link>
+			<name>libraries/SdFat</name>
+			<type>2</type>
+			<location>C:/Users/Victor/Documents/Arduino/Hardware/Arduino_STM32/STM32F1/libraries/SdFat</location>
+		</link>
+	</linkedResources>
 </projectDescription>
